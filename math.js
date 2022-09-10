@@ -1,8 +1,16 @@
-const x = 100;
+const toNumber = (value) => +value;
 
-const pow2 = (base) => base ** 2;
+function sayHello(){
+    return 'Hello. I am sayHello funnction';
+}
+const COLOR = "RED";
 
-const sum = (a,b) => a+b;
+export const pow2 = (base) => base ** 2;
+export const sum = (a,b) => a+toNumber(b);
+export const sub = (a,b) => a-b;
 
-export default {pow2, sum}; 
-//export default 'hello! it is es modules :)';
+export const superSum = (...args) => 
+args.reduce((total, item) => total + item, 0);
+
+export default 'hello es modules';
+
