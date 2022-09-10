@@ -1,9 +1,13 @@
-import pow2 from './math.js';
+import math from './math.js';
 
-const result = pow2(2);
-console.log(result);
+console.log(math);
 
-console.log(pow2(5));
-console.log(pow2(6));
-console.log(pow2(7));
-console.log(pow2(8));
+const res1 = math.pow2(2);
+console.log(res1);
+
+const res2 = math.sum(1,2);
+console.log(res2);
+
+
+const res3 = math.sum(100,250);
+console.log(res3);
